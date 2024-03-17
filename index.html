@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <div id="app" class="p-4 bg-white rounded shadow">
+        <h1 class="text-2xl font-bold mb-4">Advanced Rock Paper Scissors</h1>
+        <div class="flex space-x-4 mb-4">
+            <button class="game-choice bg-blue-500 text-white rounded px-4 py-2" data-choice="A">A</button>
+            <button class="game-choice bg-green-500 text-white rounded px-4 py-2" data-choice="B">B</button>
+            <button class="game-choice bg-red-500 text-white rounded px-4 py-2" data-choice="C">C</button>
+            <button class="game-choice bg-purple-500 text-white rounded px-4 py-2" data-choice="D">D</button>
+            <button class="game-choice bg-yellow-500 text-white rounded px-4 py-2" data-choice="E">E</button>
+            <button class="game-choice bg-indigo-500 text-white rounded px-4 py-2" data-choice="F">F</button>
+        </div>
+        <div id="result" class="text-xl"></div>
+        <div id="score" class="text-xl mb-4"></div>
+        <div id="history" class="text-sm"></div>
+    </div>
+    <script type="module" src="game.js"></script>
+</body>
+</html>
